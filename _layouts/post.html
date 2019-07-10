@@ -54,15 +54,8 @@ layout: default
 
                 <!-- gitment 评论框 start -->
                 <div id="gitmentContainer"></div>
-                {% if theme.gitment.mint %}
-                  {% set CommentsClass = "Gitmint" %}
-                  <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-                  <script src="https://file.awen.me/gitment.js"></script>
-                {% else %}
-                  {% set CommentsClass = "Gitment" %}
-                  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-                  <script src="https://file.awen.me/gitment.browser.js"></script>
-                {% endif %}
+                <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                <script src="https://file.awen.me/gitment.browser.js"></script>
 
                 <!--
                 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
