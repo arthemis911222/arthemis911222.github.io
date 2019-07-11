@@ -1,7 +1,7 @@
 # Site settings
 title: Leaf Blog
 SEOTitle: 佳洁的博客 | Leaf Blog
-header-img: img/home-bg.jpg
+header-img: img/home-bg3.jpg
 email: huxpro@gmail.com
 description: "……"
 keyword: "keyword"
@@ -59,7 +59,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+#disqus_username: hux
 
 # Netease settings
 netease_comment: false
@@ -71,8 +71,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-143700880-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 
 
@@ -106,7 +106,7 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "waiting",
+        title: "waiting for you",
         href: ""
     }
 ]
