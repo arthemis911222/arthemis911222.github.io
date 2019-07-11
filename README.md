@@ -22,13 +22,13 @@ Forked from the Hux Blog.
 我是参考这篇[博客](https://awen.me/post/64465.html)，将 layouts 文件夹下的 post.html 文件做以下修改：
 
 
-```
+```html
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 ```
 改为：
 
-```
+```html
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://file.awen.me/gitment.browser.js"></script>
 ```
