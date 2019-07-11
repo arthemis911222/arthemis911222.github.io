@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Hello Blog"
-subtitle:   " \"Hello World, Hello Blog\""
+subtitle:   " \"Hello World, Hello Blog\" —— 内含博客搭建过程"
 date:       2019-07-09 12:00:00
 author:     "Jiajie Wu"
 header-img: "img/post-bg-2015.jpg"
@@ -25,13 +25,35 @@ tags:
 
 博客的模板是在 [Hux Blog](https://github.com/Huxpro/huxpro.github.io) 这个git项目之上修改而成的。
 
-在Mac上部署本地jekyll环境遇到了很多问题，因为出现了别人都没出现的各种奇葩问题，所以比预想花费了好多时间，好在最后也成功了。
+在Mac上部署本地jekyll环境遇到了很多问题，因为出现了别人都没出现的各种奇葩问题，所以比预想花费了好多时间，好在最后也成功了。需要注意的是，在Mac上部署jekyll需要有ruby环境，要提前装好 Xcode 和对应的 Command Line Tools。如果系统不是最新的OS系统，那么只能去官网下对应版本的了（文件挺大的，网速又渣，下了我一天）。
 
-评论的功能用的也是一个git项目：[gitment](https://github.com/imsun/gitment)，部署参考了这篇脚程 -> [在Jekyll博客添加评论系统：gitment篇](https://www.cnblogs.com/jacobpan/archive/2017/07/18/7200512.html)
+这是历史版本的 Xcode 下载网址：[Xcode](https://developer.apple.com/download/more/?=xcode)
+
+---
+
+评论的功能用的是另一个git项目：[gitment](https://github.com/imsun/gitment)，部署参考了这篇脚程 -> [在Jekyll博客添加评论系统：gitment篇](https://www.cnblogs.com/jacobpan/archive/2017/07/18/7200512.html)
+
+因为 gitment 的作者已经不再维护了，所以在初始化评论的时候会报错“object ProgressEvent”，解决方法有两种：
+1. git clone gitment 到服务器上，自己启一个（推荐）；
+2. 使用别人搭建的（如果别人迁移了，你也会受到影响）；
+
+因为我没有能用的服务器（目前实验室的2台服务器都没有外网ip），所以采用了第二种。参考这篇[博客](https://awen.me/post/64465.html)，进行如下操作：
+
+修改项目中layouts文件夹下的post.html文件，注释原有的，补上可用的。
+
+```html
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://file.awen.me/gitment.browser.js"></script>
+
+<!--
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+-->
+```
 
 ## 后记
 
-依照建胜老师的建议，终于弄好了自己的博客雏形，也把上周看的paper写好发了出来。其实，也算是建胜老师的建议push了我吧，要不然，对于像我这样写博客苦手又不太喜欢写博客的人，估计「将看过的论文写成博客」永远都只是一个idea。
+依照建胜老师的建议，终于弄好了自己的博客雏形，也把上周看的paper写好发了出来。其实，也算是建胜老师的建议push了我吧，要不然，对于像我这样写博客苦手又不太喜欢写博客的人，估计「将看过的论文写成博客」永远都只是一个一闪而过的想法。
 
 不算是第一次用博客，却是第一次正式打算用好博客。之前，本科的时候也用过CSDN的博客，但后来也荒废了，希望这次能够持之以恒吧！
 
