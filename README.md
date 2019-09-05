@@ -19,9 +19,10 @@ Forked from the Hux Blog.
 因为gitment评论区出现问题，在试过几个解决方案后，决定换成gitalk。
 
 替换：[gitalk](https://github.com/gitalk/gitalk)
+
 弃用：[gitment](https://github.com/imsun/gitment)
 
----
+**【以下为gitment的部署方式和问题解决，目前已不可用，留作参考记录。】**
 
 部署过程可参考 -> [在Jekyll博客添加评论系统：gitment篇](https://www.cnblogs.com/jacobpan/archive/2017/07/18/7200512.html)
 
