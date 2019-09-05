@@ -52,15 +52,31 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-                <!-- gitment 评论框 start -->
+                <!-- gittalk start -->
+
+                <div id="gitalkContainer"></div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+                <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+                <script>
+                const gitalk = new Gitalk({
+                    clientID: 'fc9bdee95afb6673eb3f',
+                    clientSecret: 'efbcf4cddfb91200c6700bedf3879d72fe2bf26c',
+                    owner: 'arthemis911222',
+                    repo: 'arthemis911222.github.io',
+                    admin: ['arthemis911222.github.io'],
+                    id: location.leaf,      // Ensure uniqueness and length less than 50
+                    distractionFreeMode: false  // Facebook-like distraction free mode
+                });
+                gitalk.render('gitalkContainer');
+                </script>
+                </div>
+
+                <!-- gittalk end -->
+
+                <!-- gitment 评论框 废弃 start
                 <div id="gitmentContainer"></div>
                 <link rel="stylesheet" href="https://www.wenjunjiang.win/css/gitment.css">
                 <script src="https://file.awen.me/gitment.browser.js"></script>
-
-                <!--
-                <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-                <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-              -->
                 <script>
                 var gitment = new Gitment({
                     owner: 'arthemis911222',
@@ -73,7 +89,7 @@ layout: default
                 gitment.render('gitmentContainer');
                 </script>
                 </div>
-                <!-- gitment 评论框 end -->
+                gitment评论框 废弃 end -->
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
