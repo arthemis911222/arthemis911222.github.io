@@ -13,8 +13,14 @@ Forked from the Hux Blog.
 
 
 #### Deploy Comment
-添加评论区 -> [gitment](https://github.com/imsun/gitment)
+添加评论区 ->
 
+2019年09月05日更新：
+因为gitment评论区出现问题，在试过几个解决方案后，决定换成gitalk。
+
+替换：[gitalk](https://github.com/gitalk/gitalk)
+弃用：[gitment](https://github.com/imsun/gitment)
+---
 部署过程可参考 -> [在Jekyll博客添加评论系统：gitment篇](https://www.cnblogs.com/jacobpan/archive/2017/07/18/7200512.html)
 
 因为gitment已经关闭，不再维护，所以初始化评论的时候回报错“object ProgressEvent”。解决方法请参考这里：[gitment issue 170](https://github.com/imsun/gitment/issues/170)
